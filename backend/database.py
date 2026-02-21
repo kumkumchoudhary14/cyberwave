@@ -5,7 +5,7 @@ from datetime import datetime
 import os
 
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./cyberwave.db")
-gine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False} if "sqlite" in DATABASE_URL else {})
+engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
@@ -18,16 +18,6 @@ class User(Base):
     xp = Column(Integer, default=0)
     streak = Column(Integer, default=0)
     last_active = Column(DateTime, default=datetime.utcnow)
-
-class Lesson(Base):
-    __tablename__ = "lessons"
-    id = Column(String, primary_key=True)
-    title = Column(String)
-    sector = Column(String)
-    content = Column(Text)
-    difficulty = Column(String)
-    duration_min = Column(Integer)
-    completed_by = Column(Text, default="[]")
 
 class Progress(Base):
     __tablename__ = "progress"
