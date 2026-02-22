@@ -168,7 +168,7 @@ npm start
 
 ## 🏆 Hackathon
 
-Built for **[Hackathon Name]** 🎉
+Built for Cyberwave
 
 ---
 
