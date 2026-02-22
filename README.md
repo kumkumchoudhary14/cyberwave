@@ -77,8 +77,7 @@ cyberwave/
 ### Prerequisites
 - Python 3.11+
 - Node.js 18+
-- Groq API Key (free at [console.groq.com](https://console.groq.com))
-
+- Gemini API Key (free at gemini)
 ---
 
 ### 1️⃣ Clone the Repository
@@ -109,7 +108,8 @@ nano .env
 
 Add your API key:
 ```env
-GROQ_API_KEY=your_groq_api_key_here
+GEMINI_API_KEY=your_gemini
+_api_key_here
 DATABASE_URL=sqlite:///./cyberwave.db
 ```
 
