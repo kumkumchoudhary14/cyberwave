@@ -22,9 +22,6 @@ CyberWave is a full-stack AI microlearning platform designed for frontline worke
 
 ---
 
-## 🚀 Demo
-
-> 🎬 [Watch Demo Video](#) | 🌐 [Live App](#)
 
 ---
 
