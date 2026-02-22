@@ -130,12 +130,8 @@ npm start
 
 ---
 
-## 🔑 Get a Free Groq API Key
 
-1. Go to 👉 [console.groq.com](https://console.groq.com)
-2. Sign up for free
-3. Go to **API Keys** → **Create API Key**
-4. Copy and paste into your `.env` file
+
 
 ---
 
